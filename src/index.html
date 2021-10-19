@@ -24,29 +24,30 @@
       <button class="action fetch" data-page="2">Загрузить картинки</button>
       <section class="images content"></section>
     </main>
+
     <div class="popup">
       <button class="action close">&Cross;</button>
       <div class="content"></div>
     </div>
 
     <template id="image">
-      <a class="link" href="" data-id="">
+      <a class="image" href="" data-id="">
         <img src="" width="250" alt="" />
       </a>
     </template>
 
     <template id="popup-image">
       <div>
-        <figure>
-          <img src="" alt="" />
-          <figcaption>
+        <figure class="cover">
+          <img class="image" src="" alt="" />
+          <figcaption class="caption">
             Автор:
             <address class="author"></address>
           </figcaption>
         </figure>
-        <a class="link open" href="" target="_blank"
-          >Открыть в полном размере</a
-        >
+        <a class="link open" href="" target="_blank">
+          Открыть в полном размере
+        </a>
       </div>
     </template>
 

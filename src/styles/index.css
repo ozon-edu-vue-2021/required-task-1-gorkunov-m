@@ -36,12 +36,13 @@ button:disabled:hover {
   background-color: #cfd8dc;
 }
 
-main {
+.main {
   max-width: 1400px;
   min-height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
   padding: 50px;
   background-color: #fff;
   box-sizing: border-box;
@@ -55,7 +56,6 @@ main {
   font-size: 16px;
   padding: 10px 20px;
   border-radius: 6px;
-  margin: 10px 0;
 }
 
 .action:hover {
@@ -63,7 +63,9 @@ main {
 }
 
 /* Images style */
-main .content {
+.main .images {
+  width: 100%;
+  margin-top: 30px;
   position: relative;
   column-count: 4;
   column-gap: 5px;
@@ -71,7 +73,7 @@ main .content {
   border-radius: 6px;
 }
 
-a {
+.images .image {
   display: inline-block;
   border-radius: 6px;
   overflow: hidden;
@@ -79,15 +81,15 @@ a {
   min-height: 100px;
 }
 
-a:nth-child(n) {
+.images .image:nth-child(n) {
   background-color: #efebe9;
 }
 
-a:nth-child(2n) {
+.images .image:nth-child(2n) {
   background-color: #d7ccc8;
 }
 
-a:nth-child(3n) {
+.images .image:nth-child(3n) {
   background-color: #bcaaa4;
 }
 
@@ -121,10 +123,6 @@ a:nth-child(3n) {
   border-radius: 50%;
 }
 
-.popup .link {
-  display: inline;
-}
-
 .popup .content {
   text-align: right;
   column-count: initial;
@@ -137,17 +135,25 @@ a:nth-child(3n) {
   padding: 20px;
 }
 
-figure {
+.popup .cover {
   max-width: 100%;
   min-height: 350px;
   margin: 0;
 }
 
-figure img {
+.popup .image {
   border-radius: 6px;
 }
 
-figcaption {
+.popup .caption {
   color: #424242;
   margin: 5px 0;
+}
+
+.popup .author {
+  font-style: italic;
+}
+
+.popup .link {
+  display: inline;
 }
